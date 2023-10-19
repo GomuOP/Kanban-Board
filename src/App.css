@@ -1,0 +1,149 @@
+.board{
+  background: #e8e8e8; 
+  box-sizing: border-box;
+}
+.icon{
+  width: 20px; 
+  height: 20px; 
+}
+.status-info {
+  display: flex;
+  align-items: center;
+  margin:10px;
+  
+}
+.priority-info{
+  display: flex;
+  align-items: center;
+  margin:10px;
+}
+.user-info{
+  display: flex;
+  align-items: center;
+  margin:10px;
+}
+.user-info h2{
+  margin-right:10px;
+}
+
+.status-info img {
+  margin-right: 10px; 
+}
+.priority-info img{
+  margin-right: 10px;
+}
+.status-info h2 {
+  margin-right: 10px; 
+}
+.priority-info h2 {
+  margin-right: 10px;
+}
+.status-cam-name {
+  margin:10px;
+  display: flex;
+  align-items: center; 
+  justify-content: space-between; 
+}
+.priority-cam-name{
+  margin:10px;
+  display: flex;
+  align-items: center; 
+  justify-content: space-between; 
+}
+.priority-status-title{
+  margin:10px;
+  display: flex;
+  align-items: center; 
+}
+.user-img-title{
+  margin:10px;
+  display: flex;
+  align-items: center; 
+}
+.user-img-title img{
+  margin-right:10px;
+}
+.user-cam{
+  padding:10px;
+}
+.user-status-tag{
+  margin:10px;
+  display: flex;
+  align-items: center; 
+}
+.user-status-tag img{
+  margin-right: 10px;
+}
+.priority-tag{
+  display: flex;
+  align-items: center;
+  margin:10px;
+}
+.priority-status-title img{
+  margin:10px; 
+  
+}
+
+.status-image-tag{
+  display: flex;
+  align-items: center;
+  margin:10px;
+}
+.status-title{
+  margin:10px;
+}
+.status-image-tag img {
+  margin-right: 10px; 
+}
+.status-image-tag p{
+  margin-right: 10px;
+}
+.kanban-card{
+  background: white;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+  margin: 10px 10px;
+}
+.tag {
+  border: 1px solid #ccc; 
+  padding:0 10px; 
+  border-radius: 1px; 
+  margin:10px;
+ 
+}
+
+.priority-tag{
+  border: 1px solid #ccc; 
+  padding: 0px 10px; 
+  border-radius: 1px; 
+  margin:10px;
+  display: flex;
+  align-items: center; 
+}
+.priority-kan{
+
+  margin:10px;
+  display: flex;
+  align-items: center; 
+}
+.ii{
+  border: 1px solid #ccc;
+  height:54px;
+  width:54px;
+}
+
+.group {
+  flex: 1;
+  margin: 1rem;
+}
+.board-2{
+  display: flex;  
+}
+
+@media (max-width: 600px) {
+  .board-2 {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
