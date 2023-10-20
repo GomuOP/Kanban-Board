@@ -7,31 +7,35 @@ import { AiOutlineDown } from 'react-icons/ai';
 import './Navbar.css'
 
 function Navbar({ onFilter }) {
-  const [grouping, setGrouping] = useState('user');
-  const [sorting, setSorting] = useState('priority');
-  const [menuVisible, setMenuVisible] = useState(false);
+  const [grouping, setGrouping] = useState('user');       // initially set to user
+  const [sorting, setSorting] = useState('priority');     // initially set to priority
+  const [menuVisible, setMenuVisible] = useState(false);  // initially set to false
 
+  // triggers when user selects different options in grouping
   const handleGroupingChange = (e) => {
     const selectedGrouping = e.target.value;
     setGrouping(selectedGrouping);
     onFilter({ grouping: selectedGrouping, sorting });
   };
 
+  // triggers when user selects different options in grouping
   const handleSortingChange = (e) => {
     const selectedSorting = e.target.value;
     setSorting(selectedSorting);
     onFilter({ grouping, sorting: selectedSorting });
   };
 
+  // toggles the visibility of our display button
   const toggleMenu = () => {
     setMenuVisible(!menuVisible);
   };
 
+  // save prefernces acc to local storage
   const saveStateToLocalStorage = () => {
     localStorage.setItem('grouping', grouping);
     localStorage.setItem('sorting', sorting);
   };
-
+  // invoking our saved preferences from local storage
   useEffect(() => {
     saveStateToLocalStorage();
   }, [grouping, sorting]);
